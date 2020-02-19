@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,130 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="MIC CSE FEST 2020"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/titlebar"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to MIU CSE Fest 2020"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/welcomemessage"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonContainer"
+            android:layout_below="@+id/welcomemessage">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_margin="2pt"
+                android:id="@+id/Button_Layout">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="10dp"
+                    android:layout_weight="1"
+                    android:text="Events"
+                    android:id="@+id/eventButton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="10dp"
+                    android:text="Speaker"
+                    android:id="@+id/SpeakerButton"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/Button_Layout"
+                android:id="@+id/Button_Layout2">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="10dp"
+                    android:text="Venue"
+                    android:layout_weight="1"
+                    android:id="@+id/VenueButton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="10dp"
+                    android:text="Exhibitors"
+                    android:layout_weight="1"
+                    android:id="@+id/ExhibitorsButton"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/Button_Layout2">
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="10dp"
+                    android:text="Key Facts"
+                    android:layout_weight="1"
+                    android:id="@+id/KeyfactButton"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="10dp"
+                    android:text="Attraction"
+                    android:layout_weight="1"
+
+                    android:id="@+id/AttractionButton"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/get_my_pass_button"
+            android:layout_below="@+id/buttonContainer"
+            android:text="Get My Pass" />
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/image_switcher"
+            android:layout_below="@+id/get_my_pass_button">
+
+        </ImageSwitcher>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Discovery_Session"
+            android:layout_below="@+id/image_switcher"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
