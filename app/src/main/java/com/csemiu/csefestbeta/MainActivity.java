@@ -3,22 +3,28 @@ package com.csemiu.csefestbeta;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
+
 
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
 import android.os.Bundle;
+import android.widget.GridLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
+    GridLayout gridLayout;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
+
 
     public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton;
 
@@ -33,9 +39,12 @@ public class MainActivity extends AppCompatActivity {
         ExhibitorButton = findViewById(R.id.ExhibitorsButton);
         KeyfactsButton = findViewById(R.id.KeyfactButton);
         AttractionButton = findViewById(R.id.AttractionButton);
+        gridLayout = findViewById(R.id.gridLayout);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.nav_view);
@@ -46,13 +55,12 @@ public class MainActivity extends AppCompatActivity {
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
-
         eventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Event.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         speakerButton.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Speaker.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         VenueButton.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Venue.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         ExhibitorButton.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Exhebitior.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         AttractionButton.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Attraction.class);
                 startActivity(intent);
-                finish();
+
             }
         });
     }

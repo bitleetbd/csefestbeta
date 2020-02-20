@@ -5,17 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginEnd="411dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/colorAccent"
-        android:id="@+id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="20dp"
+        android:id="@+id/toolbar">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -30,11 +26,17 @@
 
     </com.google.android.material.navigation.NavigationView>
 
-    <RelativeLayout
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/titlebar"
-        android:layout_marginTop="10dp" >
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_below="@+id/nav_view"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -145,7 +147,43 @@
             android:id="@+id/Discovery_Session"
             android:layout_below="@+id/image_switcher"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="1MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="2MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="3MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="4MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="5MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="6MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="7MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+
+        </LinearLayout>
+    </GridLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
