@@ -17,6 +17,7 @@ public class Event extends AppCompatActivity {
 
     private ViewPager pager;
     private TabLayout mTabLayout;
+    private FragmentManager manager;
     TabItem day_1, day_2;
     private ScreenSlidePagerAdapter pagerAdapter;
 
@@ -28,8 +29,9 @@ public class Event extends AppCompatActivity {
 
         pager = findViewById(R.id.viewpager);
         mTabLayout = findViewById(R.id.tabLayout);
-        day_1 = findViewById(R.id.day_1);
-        day_2 = findViewById(R.id.day_2);
+//        day_1 = findViewById(R.id.day_1);
+//        day_2 = findViewById(R.id.day_2);
+
 
 
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.ic_menu_send));
