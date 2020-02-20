@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "31448250131",
+    "firebase_url": "https://cse-fest.firebaseio.com",
+    "project_id": "cse-fest",
+    "storage_bucket": "cse-fest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31448250131:android:492d00fcb7f62f66dc8ce6",
+        "android_client_info": {
+          "package_name": "com.csemiu.csefestbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31448250131-obrt54adhl6cv9gorv7n1l9etpns3oh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyglstpkg-pkiugtTE9P30s9r3JQz6TIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31448250131-obrt54adhl6cv9gorv7n1l9etpns3oh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
