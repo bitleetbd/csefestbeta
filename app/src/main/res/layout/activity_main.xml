@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MIC CSE FEST 2020"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:id="@+id/titlebar"
-        />
+        android:layout_height="20dp"
+        android:id="@+id/toolbar">
 
-    <RelativeLayout
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/titlebar"
-        android:layout_marginTop="10dp" >
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav__drawer"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_below="@+id/nav_view"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +46,7 @@
             android:textSize="30sp"
             android:id="@+id/welcomemessage"/>
 
-        <androidx.appcompat.app.AlertController.RecycleListView
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonContainer"
@@ -110,7 +127,7 @@
                     android:id="@+id/AttractionButton"/>
             </LinearLayout>
 
-        </androidx.appcompat.app.AlertController.RecycleListView>
+        </RelativeLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -126,10 +143,47 @@
         </ImageSwitcher>
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:id="@+id/Discovery_Session"
             android:layout_below="@+id/image_switcher"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="1MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
 
-    </RelativeLayout>
-</RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="2MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="3MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="4MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="5MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="6MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="7MIU CSE Club is going to arrange annual mega tech event in Manarat International University"></TextView>
+
+
+        </LinearLayout>
+    </GridLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
