@@ -45,15 +45,17 @@
                 app:tabTextColor="@color/colorAccent">
 
 
-                <!--                <com.google.android.material.tabs.TabItem-->
-                <!--                    android:id="@+id/day_1"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="match_parent" />-->
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/day_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_name" />
 
-                <!--                <com.google.android.material.tabs.TabItem-->
-                <!--                    android:id="@+id/day_2"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="match_parent"/>-->
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/day_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/ic_menu_gallery" />
 
             </com.google.android.material.tabs.TabLayout>
 
