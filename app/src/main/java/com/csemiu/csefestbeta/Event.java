@@ -29,14 +29,7 @@ public class Event extends AppCompatActivity {
 
         pager = findViewById(R.id.viewpager);
         mTabLayout = findViewById(R.id.tabLayout);
-//        day_1 = findViewById(R.id.day_1);
-//        day_2 = findViewById(R.id.day_2);
 
-
-
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.ic_menu_send));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.ic_menu_share));
-        mTabLayout.setupWithViewPager(pager);
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         pager.setAdapter(pagerAdapter);
         pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
