@@ -98,7 +98,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Major Events"></TextView>
+                    android:text="Major Events" />
 
                 <TextView
                     android:layout_width="match_parent"

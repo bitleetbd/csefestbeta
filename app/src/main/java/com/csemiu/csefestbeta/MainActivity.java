@@ -23,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
 
 
-    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton;
-    //public TextView  tv_event, timer_day, timer_hour, timer_minute, timer_second;
-    //public Handler handler;
-    //public Runnable runnable;
+    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton, getMyPass;
     private TextView txtTimerDay, txtTimerHour, txtTimerMinute, txtTimerSecond;
     private TextView tvEvent;
     private Handler handler;
@@ -46,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ExhibitorButton = findViewById(R.id.ExhibitorsButton);
         KeyfactsButton = findViewById(R.id.KeyfactButton);
         AttractionButton = findViewById(R.id.AttractionButton);
+        getMyPass = findViewById(R.id.get_my_pass_button);
 
 
         txtTimerDay = (TextView) findViewById(R.id.txtTimerDay);
@@ -108,6 +106,19 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Attraction.class);
                 startActivity(intent);
 
+            }
+        });
+
+        KeyfactsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KeyFact.class);
+            }
+        });
+        getMyPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Webview.class);
             }
         });
 
