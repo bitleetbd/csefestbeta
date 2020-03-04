@@ -113,12 +113,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, KeyFact.class);
+                startActivity(intent);
             }
         });
         getMyPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Webview.class);
+                startActivity(intent);
             }
         });
 
