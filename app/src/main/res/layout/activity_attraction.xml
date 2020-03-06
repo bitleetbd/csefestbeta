@@ -33,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:background="@color/white">
+                android:background="@drawable/round_shape"
+                android:backgroundTint="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Project Showcase"></TextView>
+                    android:text="Project Showcase" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -62,7 +63,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:background="@color/white">
+                android:background="@drawable/round_shape"
+                android:backgroundTint="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -70,7 +72,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Robo War"></TextView>
+                    android:text="Robo War" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -78,7 +80,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Robo war is segment of two robotic events such as Line following rohot" />
+                    android:text="@string/robowar" />
 
             </LinearLayout>
 
@@ -90,7 +92,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:background="@color/white">
+                android:background="@drawable/round_shape"
+                android:backgroundTint="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"

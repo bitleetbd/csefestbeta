@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
@@ -119,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         getMyPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Webview.class);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("www.cse.manarat.ac.bd/csefest20/"));
                 startActivity(intent);
             }
         });

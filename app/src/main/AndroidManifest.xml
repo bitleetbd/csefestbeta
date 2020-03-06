@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Event" />
-        <activity android:name=".Webview" />
         <activity android:name=".Attraction" />
         <activity android:name=".KeyFact" />
         <activity android:name=".Exhebitior" />

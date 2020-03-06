@@ -8,8 +8,10 @@
     <TextView
         android:id="@+id/HeaderView"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:text="header_view"
+        android:layout_height="match_parent"
+        android:text="MiU CSE FEST 2020"
+        android:gravity="center"
+        android:background="@drawable/gradient"
         android:textColor="@color/design_default_color_on_primary"
         android:textSize="36sp" />
 </LinearLayout>
