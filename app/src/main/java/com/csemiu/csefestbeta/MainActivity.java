@@ -19,6 +19,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
@@ -62,6 +63,17 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.nav_view);
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent intent = new Intent(MainActivity.this, Splash_screen.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 5000);
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.nav_app_bar_open_drawer_description, R.string.navigation_drawer_close);
@@ -120,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         getMyPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("www.cse.manarat.ac.bd/csefest20/"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cse.manarat.ac.bd/csefest20/"));
                 startActivity(intent);
             }
         });

@@ -29,14 +29,21 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ic_person_black_24dp" />
+                    android:src="@drawable/mk" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dr. M. Kaykobad"
                     android:textStyle="bold"
-                    android:textSize="30sp"></TextView>
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Professor, Dept. of CSE, BUET" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -59,14 +66,21 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ic_person_black_24dp" />
+                    android:src="@drawable/ha" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dr. Mohammad Hayder Ali"
                     android:textStyle="bold"
-                    android:textSize="30sp"></TextView>
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Professor, Dept. of CSE, DU" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -89,14 +103,21 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ic_person_black_24dp" />
+                    android:src="@drawable/jii" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Shahriar Hasan Jisun"
                     android:textStyle="bold"
-                    android:textSize="30sp"></TextView>
+                    android:textSize="30sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="National Consultant, a2i" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -120,14 +141,21 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ic_person_black_24dp" />
+                    android:src="@drawable/ss" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sadman Sadik"
                     android:textStyle="bold"
-                    android:textSize="30sp"></TextView>
+                    android:textSize="30sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Presentation creator, 10 minute school" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -157,8 +185,14 @@
                     android:layout_height="wrap_content"
                     android:text="Mehedi Hasan"
                     android:textStyle="bold"
-                    android:textSize="30sp"></TextView>
+                    android:textSize="30sp"
+                    android:textColor="@color/black" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Lecturer, Dept. of CSE, MIU" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
