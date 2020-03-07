@@ -55,6 +55,7 @@ public class day_1 extends Fragment {
         event_items.add(new Event_Item("Idea Showcase", "ROOM 105", "11:00 AM - 01:00 PM"));
         event_items.add(new Event_Item("Project Showcase", "Room 103", "11:00 AM - 01:00 PM"));
         event_items.add(new Event_Item("Seminar 1", "Seminar Hall", "03:00 PM - 04:00 PM"));
+        event_items.add(new Event_Item("Seminar 2", "Seminar Hall", "04:00 PM - 05:00 PM"));
 
     }
 }

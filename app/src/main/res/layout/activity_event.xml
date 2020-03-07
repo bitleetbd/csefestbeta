@@ -37,20 +37,21 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 app:tabMode="fixed"
-                app:tabTextColor="@color/cardview_light_background">
+                app:tabTextColor="@color/cardview_light_background"
+                tools:ignore="PrivateResource">
 
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/day_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="SAT, 14 MAR" />
+                    android:text="@string/sat_14_mar" />
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/day_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="SUN, 15 MAR" />
+                    android:text="@string/sun_15_mar" />
 
             </com.google.android.material.tabs.TabLayout>
 

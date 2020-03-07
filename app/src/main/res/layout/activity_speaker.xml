@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
+    android:orientation="vertical"
     tools:context=".Speaker">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/white"
+        app:title="Speaker"
+        app:subtitle="MIU CSE FEST 2020"
+        android:id="@+id/toolbar"
+        android:gravity="center|top" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,7 +24,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -29,12 +40,13 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/mk" />
+                    android:src="@drawable/mk"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. M. Kaykobad"
+                    android:text="@string/dr_m_kaykobad"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
@@ -43,12 +55,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Professor, Dept. of CSE, BUET" />
+                    android:text="@string/professor_dept_of_cse_buet" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Data Structure and Algorithm"
+                    android:text="@string/data_structure_and_algorithm"
                     android:textSize="20sp"
                     android:textColor="@color/blue" />
             </LinearLayout>
@@ -59,19 +71,22 @@
                 android:gravity="center"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/white"
-                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
                 android:padding="10dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ha" />
+                    android:src="@drawable/ha"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Mohammad Hayder Ali"
+                    android:text="@string/dr_mohammad_hayder_ali"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
@@ -80,12 +95,54 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Professor, Dept. of CSE, DU" />
+                    android:text="@string/professor_dept_of_cse_du" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Computer Vision"
+                    android:text="@string/computer_vision"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/round_shape"
+                android:backgroundTint="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/jii"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shahriar_hasan_jisun"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/national_consultant_a2i" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/e_commerce_emerging_as_the_future_of_trade"
                     android:textSize="20sp"
                     android:textColor="@color/blue" />
             </LinearLayout>
@@ -96,19 +153,22 @@
                 android:gravity="center"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/white"
-                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
                 android:padding="10dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/jii" />
+                    android:src="@drawable/ss"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shahriar Hasan Jisun"
+                    android:text="@string/sadman_sadik"
                     android:textStyle="bold"
                     android:textSize="30sp"
                     android:textColor="@color/black" />
@@ -117,13 +177,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="National Consultant, a2i" />
+                    android:text="@string/presentation_creator_10_minute_school" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="E-commerce emerging as the future of trade"
+                    android:text="@string/presentation_skill"
                     android:textSize="20sp"
                     android:textColor="@color/blue" />
             </LinearLayout>
@@ -134,19 +193,22 @@
                 android:gravity="center"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/white"
-                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
                 android:padding="10dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/ss" />
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sadman Sadik"
+                    android:text="@string/mehedi_hasan"
                     android:textStyle="bold"
                     android:textSize="30sp"
                     android:textColor="@color/black" />
@@ -155,52 +217,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Presentation creator, 10 minute school" />
-
+                    android:text="@string/lecturer_dept_of_cse_miu" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Presentation skill"
-                    android:textSize="20sp"
-                    android:textColor="@color/blue" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@drawable/round_shape"
-                android:backgroundTint="@color/white"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/ic_person_black_24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mehedi Hasan"
-                    android:textStyle="bold"
-                    android:textSize="30sp"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Lecturer, Dept. of CSE, MIU" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Artificial Intelligence"
+                    android:text="@string/artificial_intelligence"
                     android:textSize="20sp"
                     android:textColor="@color/blue" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>

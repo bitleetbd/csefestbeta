@@ -19,7 +19,7 @@
         <activity android:name=".Event" />
         <activity android:name=".Attraction" />
         <activity android:name=".KeyFact" />
-        <activity android:name=".Exhebitior" />
+        <activity android:name=".Exhibitor" />
         <activity android:name=".Venue" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".Speaker" />

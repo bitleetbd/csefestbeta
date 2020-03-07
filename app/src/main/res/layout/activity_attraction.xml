@@ -25,7 +25,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -42,7 +42,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Project Showcase" />
+                    android:text="@string/project_showcase" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Robo War" />
+                    android:text="@string/robo_war" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Major Events" />
+                    android:text="@string/major_events" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -109,7 +109,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Inauguration Ceremony" />
+                    android:text="@string/inauguration_ceremony" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -117,7 +117,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Showcase" />
+                    android:text="@string/showcase" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -125,7 +125,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Robo war" />
+                    android:text="@string/robo_war" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -133,7 +133,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Seminar" />
+                    android:text="@string/seminar" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Award Giving Ceremony" />
+                    android:text="@string/award_giving_ceremony" />
 
             </LinearLayout>
 

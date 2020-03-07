@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
             android:text="" />
 
     </androidx.appcompat.widget.Toolbar>
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Welcome to MIU CSE Fest 2020"
+                android:text="@string/welcome_to_miu_cse_fest_2020"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:id="@+id/welcomemessage" />
@@ -73,13 +73,13 @@
                     android:id="@+id/tvhappyevent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="50dp"
+                    android:paddingStart="50dp"
                     android:singleLine="true"
-                    android:text="See you next time!"
+                    android:text="@string/see_you_next_time"
                     android:textColor="@color/beguni"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
                     android:gravity="center|left"
                     android:foregroundGravity="center_horizontal"
                     android:visibility="gone" />
@@ -93,7 +93,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="There are only"
+                        android:text="@string/there_are_only"
                         android:textSize="20sp"
                         android:id="@+id/textView1"
                         android:textColor="@color/black"
@@ -105,7 +105,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
                             android:id="@+id/LinearLayout"
@@ -133,7 +134,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_horizontal"
-                                android:text="Days"
+                                android:text="@string/days"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="#fff"
                                 android:textStyle="bold" />
@@ -157,7 +158,7 @@
                                 android:gravity="center"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@color/pink"
-                                android:textSize="35dp"
+                                android:textSize="35sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -165,7 +166,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_horizontal"
-                                android:text="Hours"
+                                android:text="@string/hours"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="#fff"
                                 android:textStyle="bold" />
@@ -189,7 +190,7 @@
                                 android:gravity="center"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@color/gray"
-                                android:textSize="35dp"
+                                android:textSize="35sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -197,7 +198,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_horizontal"
-                                android:text="Minutes"
+                                android:text="@string/minutes"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="#fff"
                                 android:textStyle="bold" />
@@ -221,7 +222,7 @@
                                 android:gravity="center"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@color/blue"
-                                android:textSize="35dp"
+                                android:textSize="35sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -229,7 +230,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_horizontal"
-                                android:text="Seconds"
+                                android:text="@string/seconds"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="#fff"
                                 android:textStyle="bold" />
@@ -239,7 +240,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="left till the fire up!"
+                        android:text="@string/left_till_the_fire_up"
                         android:id="@+id/textView2"
                         android:textColor="@color/black"
                         android:gravity="center"
@@ -256,8 +257,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/round_shape"
-                android:id="@+id/buttonContainer"
-                android:layout_below="@+id/welcomemessage">
+                android:id="@+id/buttonContainer">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -272,15 +272,16 @@
                         android:layout_height="wrap_content"
                         android:width="10dp"
                         android:layout_weight="1"
-                        android:text="Events"
+                        android:text="@string/events"
                         android:textSize="20sp"
                         android:drawableStart="@drawable/ic_today_black_24dp"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/blue"
-                        android:id="@+id/eventButton" />
+                        android:id="@+id/eventButton"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
                         android:layout_width="wrap_content"
@@ -292,11 +293,12 @@
                         android:width="10dp"
                         android:drawableStart="@drawable/ic_speaker"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textSize="20sp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Speaker"
-                        android:id="@+id/SpeakerButton" />
+                        android:layout_marginStart="10dp"
+                        android:text="@string/speaker"
+                        android:id="@+id/SpeakerButton"
+                        tools:ignore="ButtonStyle" />
 
                 </LinearLayout>
 
@@ -311,32 +313,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="10dp"
-                        android:text="Venue"
+                        android:text="@string/venue"
                         android:textSize="20sp"
                         android:drawableStart="@drawable/ic_location"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/gray"
                         android:layout_weight="1"
-                        android:id="@+id/VenueButton" />
+                        android:id="@+id/VenueButton"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="10dp"
-                        android:text="Exhibitors"
-                        android:layout_marginLeft="10dp"
+                        android:text="@string/exhibitors"
+                        android:layout_marginStart="10dp"
                         android:drawableStart="@drawable/ic_home"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/red"
                         android:layout_weight="1"
-                        android:id="@+id/ExhibitorsButton" />
+                        android:id="@+id/ExhibitorsButton"
+                        tools:ignore="ButtonStyle" />
 
                 </LinearLayout>
 
@@ -353,32 +357,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="10dp"
-                        android:text="Key Facts"
+                        android:text="@string/key_facts"
                         android:drawableStart="@drawable/ic_keyfacts"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/pink"
                         android:layout_weight="1"
-                        android:id="@+id/KeyfactButton" />
+                        android:id="@+id/KeyfactButton"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:width="10dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:drawableStart="@drawable/ic_attraction"
                         android:gravity="left|center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/green"
                         android:textSize="20sp"
-                        android:text="Attraction"
+                        android:text="@string/attraction"
                         android:layout_weight="1"
-                        android:id="@+id/AttractionButton" />
+                        android:id="@+id/AttractionButton"
+                        tools:ignore="ButtonStyle" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -392,7 +398,7 @@
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/skyBlue"
-                android:text="Get My Pass" />
+                android:text="@string/get_my_pass" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -403,7 +409,7 @@
                 android:orientation="horizontal">
 
                 <pl.droidsonroids.gif.GifImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/round_shape"
@@ -415,7 +421,7 @@
                     android:background="@drawable/round_shape"
                     android:padding="5dp"
                     android:textColor="@color/white"
-                    android:text="Our Partner"
+                    android:text="@string/our_partner"
                     android:textSize="25sp"
                     android:gravity="center" />
 
@@ -436,10 +442,11 @@
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    tools:ignore="UselessParent">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
@@ -447,25 +454,29 @@
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:src="@drawable/prize70k" />
+                            android:src="@drawable/prize70k"
+                            android:contentDescription="@string/todo" />
 
                         <ImageView
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:src="@drawable/contest10" />
+                            android:src="@drawable/contest10"
+                            android:contentDescription="@string/todo" />
 
                         <ImageView
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:src="@drawable/seminer2" />
+                            android:src="@drawable/seminer2"
+                            android:contentDescription="@string/todo" />
 
                         <ImageView
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:src="@drawable/speaker5" />
+                            android:src="@drawable/speaker5"
+                            android:contentDescription="@string/todo" />
                     </LinearLayout>
 
                 </HorizontalScrollView>
@@ -475,20 +486,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center|left">
+                android:layout_gravity="center|left"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:src="@drawable/festlogo"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
                     android:gravity="center"
-                    android:text="#MIUCSEFEST2020" />
+                    android:text="@string/hash_tag" />
             </LinearLayout>
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/gradient"
     android:layout_height="match_parent"
-    tools:context=".Exhebitior"
+    tools:context=".Exhibitor"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -24,7 +24,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
@@ -40,7 +40,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,24 +54,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -88,7 +90,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -101,24 +104,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -135,7 +139,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,24 +153,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -182,7 +188,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -195,24 +202,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -229,7 +237,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -242,24 +251,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -276,7 +286,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -289,24 +300,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -323,7 +335,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:padding="10dp"
-                    android:src="@drawable/contest10" />
+                    android:src="@drawable/contest10"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -336,24 +349,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="25sp"
-                        android:text="Exhibitor Name" />
+                        android:text="@string/exhibitor_name" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="18sp"
-                        android:text="Exhibitor Type" />
+                        android:text="@string/exhibitor_type" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textSize="20sp"
-                        android:text="Exhibitor Venue" />
+                        android:text="@string/exhibitor_venue" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/line" />
+                        android:src="@drawable/line"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 

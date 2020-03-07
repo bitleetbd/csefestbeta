@@ -25,7 +25,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -42,7 +42,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Key Facts" />
+                    android:text="@string/key_facts" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Programming contest" />
+                    android:text="@string/programming_contest" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Gaming Contest" />
+                    android:text="@string/gaming_contest" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Robo war" />
+                    android:text="@string/robo_war" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Robo run" />
+                    android:text="@string/robo_run" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Project Showcase" />
+                    android:text="@string/project_showcase" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Tech Idea presentation" />
+                    android:text="@string/tech_idea_presentation" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:paddingBottom="5dp"
-                    android:text="ICT Olympiad" />
+                    android:text="@string/ict_olympiad" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Math Olympiad" />
+                    android:text="@string/math_olympiad" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                     android:paddingBottom="5dp"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:text="Seminar" />
+                    android:text="@string/seminar" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                     android:paddingBottom="5dp"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:text="Photography contest" />
+                    android:text="@string/photography_contest" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Videography contest" />
+                    android:text="@string/videography_contest" />
 
             </LinearLayout>
 
@@ -151,7 +151,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Areas of Talk's (Session)" />
+                    android:text="@string/areas_of_talk_s_session" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -159,7 +159,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Data Structure and Algorithm" />
+                    android:text="@string/data_structure_and_algorithm" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -167,7 +167,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Artificial Intelligence" />
+                    android:text="@string/artificial_intelligence" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -175,7 +175,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="E-commerce" />
+                    android:text="@string/e_commerce_emerging_as_the_future_of_trade" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -183,7 +183,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Skill Development" />
+                    android:text="@string/presentation_skill" />
 
             </LinearLayout>
 
@@ -204,7 +204,7 @@
                     android:textColor="@color/skyBlue"
                     android:textSize="20sp"
                     android:paddingBottom="7dp"
-                    android:text="Major Events" />
+                    android:text="@string/major_events" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -212,7 +212,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Inauguration Ceremony" />
+                    android:text="@string/inauguration_ceremony" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Showcase" />
+                    android:text="@string/showcase" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -228,7 +228,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="5dp"
                     android:textSize="15sp"
-                    android:text="Robo war" />
+                    android:text="@string/robo_war" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -236,7 +236,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Seminar" />
+                    android:text="@string/seminar" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -244,7 +244,7 @@
                     android:textColor="@color/black"
                     android:paddingBottom="10dp"
                     android:textSize="15sp"
-                    android:text="Award Giving Ceremony" />
+                    android:text="@string/award_giving_ceremony" />
 
             </LinearLayout>
 
