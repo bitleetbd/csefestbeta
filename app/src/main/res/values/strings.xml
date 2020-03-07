@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CSE FEST BETA</string>
+    <string name="app_name">MIU CSE FEST 2020</string>
     <string name="title_activity_nav__drawer">Nav_Drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

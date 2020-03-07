@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private Runnable runnable;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,16 +62,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.nav_view);
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                Intent intent = new Intent(MainActivity.this, Splash_screen.class);
-                startActivity(intent);
-                finish();
-            }
-        }, 5000);
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.nav_app_bar_open_drawer_description, R.string.navigation_drawer_close);
