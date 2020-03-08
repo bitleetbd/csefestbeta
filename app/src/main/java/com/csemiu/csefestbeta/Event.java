@@ -21,6 +21,7 @@ public class Event extends AppCompatActivity {
     TabItem day_1, day_2;
     private ScreenSlidePagerAdapter pagerAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,5 +98,6 @@ public class Event extends AppCompatActivity {
             return 2;
         }
     }
+
 
 }

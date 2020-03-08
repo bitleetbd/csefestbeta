@@ -1,13 +1,23 @@
-package com.csemiu.csefestbeta;
+package com.csemiu.csefestbeta.Adapter;
+
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.csemiu.csefestbeta.day_1;
+import com.csemiu.csefestbeta.day_2;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class PagerAdapter extends FragmentPagerAdapter {
 
     private int days;
+    private final List<Fragment> fragmentList = new ArrayList<>();
+    private final List<String> stringList = new ArrayList<>();
+
 
     public PagerAdapter(@NonNull FragmentManager fm, int behaviorResumeOnlyCurrentFragment, int behavior) {
         super(fm, behavior);
@@ -31,4 +41,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 0;
     }
+
+
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CSE FEST BETA</string>
+    <string name="app_name">MIU CSE FEST 2020</string>
     <string name="title_activity_nav__drawer">Nav_Drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,4 +17,70 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_showcasing_details">Hardware and software showcasing is one of the key attraction of "MIU CSE Fest". This is such a platform where
+    Students from different universities and colleges gather at one place and showcase their products and services to the audience. The sole purpose
+    of the Project showcasing is to represent Bangladesh students as digitally ready to take any challenges.</string>
+    <string name="robowar">Robo war is segment of two robotic events such as Line following rohot</string>
+    <string name="manarat_international_university_ashulia">MANARAT INTERNATIONAL UNIVERSITY, ASHULIA</string>
+    <string name="_14th_15th_march_2020_10_00_am_05_00_pm">14TH - 15TH MARCH, 2020 10:00 AM - 05:00 PM</string>
+    <string name="todo">TODO</string>
+    <string name="hash_tag">#MIUCSEFEST2020</string>
+    <string name="organized_by">Organized By:</string>
+    <string name="co_organizers">Co-organizers:</string>
+    <string name="project_showcase">Project Showcase</string>
+    <string name="robo_war">Robo War</string>
+    <string name="major_events">Major Events</string>
+    <string name="inauguration_ceremony">Inauguration Ceremony</string>
+    <string name="showcase">Showcase</string>
+    <string name="seminar">Seminar</string>
+    <string name="award_giving_ceremony">Award Giving Ceremony</string>
+    <string name="sat_14_mar">SAT, 14 MAR</string>
+    <string name="sun_15_mar">SUN, 15 MAR</string>
+    <string name="exhibitor_name">Exhibitor Name</string>
+    <string name="exhibitor_type">Exhibitor Type</string>
+    <string name="exhibitor_venue">Exhibitor Venue</string>
+    <string name="programming_contest">Programming contest</string>
+    <string name="gaming_contest">Gaming Contest</string>
+    <string name="robo_run">Robo run</string>
+    <string name="tech_idea_presentation">Tech Idea presentation</string>
+    <string name="ict_olympiad">ICT Olympiad</string>
+    <string name="math_olympiad">Math Olympiad</string>
+    <string name="photography_contest">Photography contest</string>
+    <string name="videography_contest">Videography contest</string>
+    <string name="areas_of_talk_s_session">Areas of Talk\'s (Session)</string>
+    <string name="data_structure_and_algorithm">Data Structure and Algorithm</string>
+    <string name="artificial_intelligence">Artificial Intelligence</string>
+    <string name="professor_dept_of_cse_buet">Professor, Dept. of CSE, BUET</string>
+    <string name="dr_m_kaykobad">Dr. M. Kaykobad</string>
+    <string name="dr_mohammad_hayder_ali">Dr. Mohammad Hayder Ali</string>
+    <string name="professor_dept_of_cse_du">Professor, Dept. of CSE, DU</string>
+    <string name="computer_vision">Computer Vision</string>
+    <string name="shahriar_hasan_jisun">Shahriar Hasan Jisun</string>
+    <string name="national_consultant_a2i">National Consultant, a2i</string>
+    <string name="e_commerce_emerging_as_the_future_of_trade">E-commerce emerging as the future of trade</string>
+    <string name="sadman_sadik">Sadman Sadik</string>
+    <string name="presentation_creator_10_minute_school">Presentation creator, 10 minute school</string>
+    <string name="presentation_skill">Presentation skill</string>
+    <string name="mehedi_hasan">Mehedi Hasan</string>
+    <string name="lecturer_dept_of_cse_miu">Lecturer, Dept. of CSE, MIU</string>
+    <string name="welcome_to_miu_cse_fest_2020">Welcome to MIU CSE Fest 2020</string>
+    <string name="see_you_next_time">See you next time!</string>
+    <string name="there_are_only">There are only</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="left_till_the_fire_up">left till the fire up!</string>
+    <string name="events">Events</string>
+    <string name="speaker">Speaker</string>
+    <string name="exhibitors">Exhibitors</string>
+    <string name="key_facts">Key Facts</string>
+    <string name="get_my_pass">Get My Pass</string>
+    <string name="our_partner">Our Partner</string>
+    <string name="attraction">Attraction</string>
+    <string name="event_name">Event Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="venue">Venue</string>
+    <string name="_10_00am_11_30am">10:00AM - 11:30AM</string>
 </resources>

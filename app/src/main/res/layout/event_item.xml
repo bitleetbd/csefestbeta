@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/round_shape"
+    android:backgroundTint="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_today_blue_24dp"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inauguration_ceremony"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/event_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/venue"
+            android:textSize="15sp"
+            android:id="@+id/venue_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10_00am_11_30am"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/time_name" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:cropToPadding="true"
+            android:src="@drawable/line"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+
+</LinearLayout>

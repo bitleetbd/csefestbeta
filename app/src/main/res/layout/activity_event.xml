@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".Event">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/white"
+        app:title="Events"
+        app:subtitle="MIU CSE FEST 2020"
+        android:id="@+id/toolbar"
+        android:gravity="center|top" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <!--        <LinearLayout-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:orientation="horizontal">-->
-        <!--            <TextView-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:text="18th March"-->
-        <!--                android:layout_weight="1">-->
-        <!--            </TextView>-->
-        <!--            <TextView-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:text="19th March"-->
-        <!--                android:layout_weight="1">-->
-        <!--            </TextView>-->
-        <!--        </LinearLayout>-->
 
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
+            android:background="@android:color/transparent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true">
 
@@ -42,20 +37,21 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 app:tabMode="fixed"
-                app:tabTextColor="@color/colorAccent">
+                app:tabTextColor="@color/cardview_light_background"
+                tools:ignore="PrivateResource">
 
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/day_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/app_name" />
+                    android:text="@string/sat_14_mar" />
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/day_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:icon="@drawable/ic_menu_gallery" />
+                    android:text="@string/sun_15_mar" />
 
             </com.google.android.material.tabs.TabLayout>
 
@@ -67,4 +63,4 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
