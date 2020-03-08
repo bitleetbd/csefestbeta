@@ -1,12 +1,13 @@
 package com.csemiu.csefestbeta;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
@@ -17,19 +18,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
 
 
-    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton, getMyPass;
+    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton;
+    //public TextView  tv_event, timer_day, timer_hour, timer_minute, timer_second;
+    //public Handler handler;
+    //public Runnable runnable;
     private TextView txtTimerDay, txtTimerHour, txtTimerMinute, txtTimerSecond;
     private TextView tvEvent;
     private Handler handler;
     private Runnable runnable;
+
+
 
 
     @Override
@@ -43,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         ExhibitorButton = findViewById(R.id.ExhibitorsButton);
         KeyfactsButton = findViewById(R.id.KeyfactButton);
         AttractionButton = findViewById(R.id.AttractionButton);
-        getMyPass = findViewById(R.id.get_my_pass_button);
 
 
         txtTimerDay = (TextView) findViewById(R.id.txtTimerDay);
@@ -61,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.nav_view);
-
+        navigationView.setNavigationItemSelectedListener(this);
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.nav_app_bar_open_drawer_description, R.string.navigation_drawer_close);
@@ -110,22 +114,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        KeyfactsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, KeyFact.class);
-                startActivity(intent);
-            }
-        });
-        getMyPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cse.manarat.ac.bd/csefest20/"));
-                startActivity(intent);
-            }
-        });
-
     }
+
 
     public void countDownStart() {
         handler = new Handler();
@@ -177,4 +167,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_Event:
+
+                break;
+        }
+        return true;
+    }
 }
