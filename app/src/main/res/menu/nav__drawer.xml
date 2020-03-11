@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/Event_nav"
-        android:title="Events" />
+        android:id="@+id/nav_event"
+        android:title="@string/events" />
+    <item
+        android:id="@+id/nav_speaker"
+        android:title="@string/speaker" />
+    <item
+        android:id="@+id/nav_venue"
+        android:title="@string/venue" />
+    <item
+        android:id="@+id/nav_exhibitors"
+        android:title="@string/exhibitors" />
+    <item
+        android:id="@+id/nav_attraction"
+        android:title="@string/attraction" />
+    <item
+        android:id="@+id/nav_about"
+        android:title="@string/about_us" />
 </menu>

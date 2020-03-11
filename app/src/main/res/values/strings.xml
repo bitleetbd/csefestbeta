@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MIU CSE FEST 2020</string>
+    <string name="map_key">AIzaSyAwFhe8Pg2QFFN-razt3t53sQXLB273Fkg</string>
     <string name="title_activity_nav__drawer">Nav_Drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -83,4 +84,6 @@
     <string name="time">Time</string>
     <string name="venue">Venue</string>
     <string name="_10_00am_11_30am">10:00AM - 11:30AM</string>
+    <string name="about_us">About us</string>
+    <string name="get_direction">Get Direction</string>
 </resources>

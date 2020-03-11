@@ -4,14 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.material.navigation.NavigationView;
 
 import java.text.SimpleDateFormat;
@@ -20,21 +24,17 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
 
 
-    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton;
-    //public TextView  tv_event, timer_day, timer_hour, timer_minute, timer_second;
-    //public Handler handler;
-    //public Runnable runnable;
+    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton, getMyPass;
     private TextView txtTimerDay, txtTimerHour, txtTimerMinute, txtTimerSecond;
     private TextView tvEvent;
     private Handler handler;
     private Runnable runnable;
-
-
 
 
     @Override
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ExhibitorButton = findViewById(R.id.ExhibitorsButton);
         KeyfactsButton = findViewById(R.id.KeyfactButton);
         AttractionButton = findViewById(R.id.AttractionButton);
+        getMyPass = findViewById(R.id.get_my_pass_button);
 
 
         txtTimerDay = (TextView) findViewById(R.id.txtTimerDay);
@@ -114,8 +115,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
-    }
+        KeyfactsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, KeyFact.class);
+                startActivity(intent);
+            }
+        });
+        getMyPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cse.manarat.ac.bd/csefest20/"));
+                startActivity(intent);
+            }
+        });
 
+    }
 
     public void countDownStart() {
         handler = new Handler();
@@ -169,11 +184,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.nav_Event:
-
+        switch (item.getItemId()) {
+            case R.id.nav_event:
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_speaker:
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_exhibitors:
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_venue:
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_attraction:
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
