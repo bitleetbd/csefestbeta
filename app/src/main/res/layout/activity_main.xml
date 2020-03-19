@@ -73,14 +73,12 @@
                     android:id="@+id/tvhappyevent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="50dp"
                     android:singleLine="true"
                     android:text="@string/see_you_next_time"
                     android:textColor="@color/beguni"
-                    android:textSize="24sp"
+                    android:textSize="25sp"
                     android:textStyle="bold"
-                    android:layout_marginStart="35dp"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:foregroundGravity="center_horizontal"
                     android:visibility="gone" />
 
@@ -307,40 +305,55 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:layout_below="@+id/Button_Layout"
-                    android:id="@+id/Button_Layout2">
+                    android:id="@+id/Button_Layout2"
+                    android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:width="10dp"
                         android:text="@string/venue"
                         android:textSize="20sp"
                         android:drawableStart="@drawable/ic_location"
                         android:gravity="left|center"
                         android:paddingStart="10dp"
                         android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
                         android:background="@drawable/round_shape"
                         android:backgroundTint="@color/gray"
-                        android:layout_weight="1"
                         android:id="@+id/VenueButton"
-                        tools:ignore="ButtonStyle" />
-
+                        tools:ignore="ButtonStyle,RtlSymmetry" />
                     <Button
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:width="10dp"
-                        android:text="@string/exhibitors"
-                        android:layout_marginStart="10dp"
-                        android:drawableStart="@drawable/ic_home"
+                        android:text="Get Passs"
+                        android:textSize="20sp"
+                        android:drawableStart="@drawable/ic_location"
                         android:gravity="left|center"
                         android:paddingStart="10dp"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:background="@drawable/round_shape"
-                        android:backgroundTint="@color/red"
                         android:layout_weight="1"
-                        android:id="@+id/ExhibitorsButton"
-                        tools:ignore="ButtonStyle" />
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="@color/skyBlue"
+                        android:id="@+id/get_my_pass_button" />
+
+                    <!--                    <Button-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:width="10dp"-->
+                    <!--                        android:text="@string/exhibitors"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:drawableStart="@drawable/ic_home"-->
+                    <!--                        android:gravity="left|center"-->
+                    <!--                        android:paddingStart="10dp"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="20sp"-->
+                    <!--                        android:background="@drawable/round_shape"-->
+                    <!--                        android:backgroundTint="@color/red"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:id="@+id/ExhibitorsButton"-->
+                    <!--                        tools:ignore="ButtonStyle" />-->
 
                 </LinearLayout>
 
@@ -382,23 +395,13 @@
                         android:backgroundTint="@color/green"
                         android:textSize="20sp"
                         android:text="@string/attraction"
+                        android:singleLine="true"
                         android:layout_weight="1"
                         android:id="@+id/AttractionButton"
                         tools:ignore="ButtonStyle" />
                 </LinearLayout>
 
             </RelativeLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/get_my_pass_button"
-                android:textSize="20sp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/round_shape"
-                android:backgroundTint="@color/skyBlue"
-                android:text="@string/get_my_pass" />
 
             <LinearLayout
                 android:layout_width="match_parent"

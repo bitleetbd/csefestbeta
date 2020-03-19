@@ -6,9 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -25,12 +28,10 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
+    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton, getMyPass;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
-
-
-    public Button eventButton, speakerButton, VenueButton, ExhibitorButton, KeyfactsButton, AttractionButton, getMyPass;
     private TextView txtTimerDay, txtTimerHour, txtTimerMinute, txtTimerSecond;
     private TextView tvEvent;
     private Handler handler;
@@ -42,10 +43,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.e("onCreate: name", getPackageName());
+        Log.e("onCreate: name", getPackageCodePath());
+        Log.e("onCreate: name", getPackageResourcePath());
+        Log.e("onCreate: name", getLocalClassName());
+
         eventButton = findViewById(R.id.eventButton);
         speakerButton = findViewById(R.id.SpeakerButton);
         VenueButton = findViewById(R.id.VenueButton);
-        ExhibitorButton = findViewById(R.id.ExhibitorsButton);
+//        ExhibitorButton = findViewById(R.id.ExhibitorsButton);
         KeyfactsButton = findViewById(R.id.KeyfactButton);
         AttractionButton = findViewById(R.id.AttractionButton);
         getMyPass = findViewById(R.id.get_my_pass_button);
@@ -98,14 +104,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });
-        ExhibitorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Exhibitor.class);
-                startActivity(intent);
-
-            }
-        });
+//        ExhibitorButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, Exhibitor.class);
+//                startActivity(intent);
+//
+//            }
+//        });
         AttractionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+
     public void countDownStart() {
         handler = new Handler();
         runnable = new Runnable() {
@@ -139,8 +146,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void run() {
                 handler.postDelayed(this, 1000);
                 try {
-                    SimpleDateFormat dateFormat = new SimpleDateFormat(
-                            "yyyy-MM-dd");
+                    @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     Date futureDate = dateFormat.parse("2020-03-14");
                     Date currentDate = new Date();
                     if (!currentDate.after(futureDate)) {
@@ -155,10 +161,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         long seconds = diff / 1000;
                         txtTimerDay.setText("" + String.format("%02d", days));
                         txtTimerHour.setText("" + String.format("%02d", hours));
-                        txtTimerMinute.setText(""
-                                + String.format("%02d", minutes));
-                        txtTimerSecond.setText(""
-                                + String.format("%02d", seconds));
+                        txtTimerMinute.setText("" + String.format("%02d", minutes));
+                        txtTimerSecond.setText("" + String.format("%02d", seconds));
                     } else {
                         tvEvent.setVisibility(View.VISIBLE);
                         tvEvent.setText("See you next time!");
@@ -184,24 +188,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId()) {
-            case R.id.nav_event:
+            case R.id.Event:
                 Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Event.class);
+                startActivity(intent);
                 break;
             case R.id.nav_speaker:
-                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Clicked speaker", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_exhibitors:
-                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Clicked exhibitor", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_venue:
-                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Clicked venue", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_attraction:
-                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Clicked attraction", Toast.LENGTH_SHORT).show();
                 break;
         }
-        drawerLayout.closeDrawer(GravityCompat.START);
+        drawerLayout.closeDrawer(GravityCompat.END);
         return true;
     }
 
